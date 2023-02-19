@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="React Sample" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Niño Perez" />
+    <title>SecondReact</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- React JS CDN -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function Navbar() {
+        return (
+          <nav className="navbar">
+            <div className="navbar-left">
+              <a href="index.html">
+                <img
+                  src="./img/logo512.png"
+                  alt="React Logo"
+                  className="nav-logo"
+                />
+              </a>
+              <h3 className="nav-logo-text">ReactFacts</h3>
+            </div>
+            <h4 className="nav-title">React Course - Project 1</h4>
+          </nav>
+        );
+      }
+
+      function Main() {
+        return (
+          <div className="main">
+            <h1 className="facts-title">Fun facts about React</h1>
+            <ul className="facts-items">
+              <li>Was first released in 2013</li>
+              <li>Was originally created by Jordan Walke</li>
+              <li>Has well over 100k stars on Github</li>
+              <li>Is maintain by Facebook</li>
+              <li>Power thousands of interprise apps, including mobile apps</li>
+            </ul>
+          </div>
+        );
+      }
+
+      function App() {
+        return (
+          <div className="container">
+            <Navbar />
+            <Main />
+          </div>
+        );
+      }
+
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(<App />);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+/* navigation bar styling */
+.navbar {
+    padding: 10px 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    background-color: #000000;
+}
+
+.navbar .navbar-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .navbar-logo-text {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.navbar .nav-logo-text {
+    color: #09cce6;
+    font-size: 24px;
+}
+
+.navbar .nav-title {
+    color: #fff;
+}
+
+.navbar .nav-logo {
+    width: 45px;
+    margin-right: 10px;
+}
+
+/* main content styling */
+.main {
+    margin: 0;
+    padding: 60px 30px;
+    width: 100%;
+    height: 100vh;
+    background-color: #252525;
+    background-image: url(./img/React-icon.png);
+    background-repeat: no-repeat;
+    background-position: right;
+
+    color: #ffff;
+}
+
+.main .facts-title {
+    margin: 0;
+    font-size: 40px;
+}
+
+.main .facts-items li::marker {
+    color: #09cce6;
+}
+
+.main .facts-items li {
+    font-size: 20px;
+    line-height: 20px;
+    padding-block: 10px;
+}
